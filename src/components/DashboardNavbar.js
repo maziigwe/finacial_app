@@ -13,13 +13,9 @@ export const DashboardNavbar = ({
       <Card className="bg-white px-2">
         <Card.Body>
           <div>
-            <div className="d-flex justify-content-between py-2 search-and-profile-container">
-              <div>
-                <SearchInput />
-              </div>
-              <div>
-                <ProfileNotification />
-              </div>
+            <div className="  py-2 search-and-profile-container">
+              <SearchInput />
+              <ProfileNotification />
             </div>
             <div className="d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
               <GreetingProfile />

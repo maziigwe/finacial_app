@@ -3,7 +3,7 @@ import { BuildingFill, PatchCheckFill } from "react-bootstrap-icons";
 
 export const GreetingProfile = () => {
   const color = "gray";
-  const size = "20";
+  const size = "18";
   const classes = "me-2";
   return (
     <div className="d-flex justify-content-between ">

@@ -3,7 +3,7 @@ import "./profile-notification.css";
 
 export const ProfileNotification = () => {
   return (
-    <div className="d-flex justify-content-between align-items-center">
+    <div className="d-flex align-items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="25"
@@ -19,22 +19,20 @@ export const ProfileNotification = () => {
         src="https://www.therconline.com/wp-content/uploads/2022/05/Does-Facebook-have-the-%E2%80%98New-Profile-Pic-feature-as-app-goes-viral-1-768x768.png"
         alt="profile picture"
       />
-      <div className="ms-2 d-flex justify-content-between align-items-center">
-        <div className="ms-1 py-1 me-1 h6">John Doe</div>{" "}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-chevron-down"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-          />
-        </svg>
-      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-chevron-down"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+        />
+      </svg>
     </div>
   );
 };
