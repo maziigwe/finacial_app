@@ -6,8 +6,8 @@ export const ProfileNotification = () => {
     <div className="d-flex justify-content-between align-items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
+        width="25"
+        height="25"
         fill="currentColor"
         class="bi bi-bell"
         viewBox="0 0 16 16"
@@ -20,7 +20,7 @@ export const ProfileNotification = () => {
         alt="profile picture"
       />
       <div className="ms-2 d-flex justify-content-between align-items-center">
-        <div className="ms-1 py-1 me-1">John Doe</div>{" "}
+        <div className="ms-1 py-1 me-1 h6">John Doe</div>{" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"

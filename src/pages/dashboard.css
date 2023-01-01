@@ -70,6 +70,17 @@
   border-bottom: 1.4px solid #e2e2e2b7;
 }
 
+@media screen and (max-width: 768px) {
+  .verify-address {
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 50%;
+
+    word-spacing: -1px;
+    margin-bottom: 2rem;
+  }
+}
+
 /* The sidebar */
 .sidebar {
   height: 90vh;

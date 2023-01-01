@@ -21,7 +21,7 @@ export const DashboardNavbar = ({
                 <ProfileNotification />
               </div>
             </div>
-            <div className="d-flex justify-content-between align-items-center py-2">
+            <div className="d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
               <GreetingProfile />
 
               <div className="transaction">
