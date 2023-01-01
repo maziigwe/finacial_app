@@ -1,0 +1,110 @@
+/* Main dashboard */
+.dashboard {
+  background-color: #e6e6e67a;
+  height: 100vh;
+}
+
+/* Dashboard content container */
+.dashboard-content {
+  margin: 0 auto;
+  max-width: 90%;
+}
+.card-icon {
+  color: #5e5d5da9;
+}
+._card {
+  border-left: 5px solid gray;
+}
+.main-card-item {
+  height: 6rem;
+  margin-top: 0.5rem;
+  margin-left: 0.3rem;
+}
+.card-title {
+  color: #686666;
+}
+.card-amount {
+  color: #323232bf;
+  font-size: x-large;
+  font-weight: 700;
+}
+.view-all_card {
+  color: #1582e1;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline;
+}
+
+.container .card:hover {
+  transform: scale(1.01);
+  border: 1px solid#045955fa;
+  border-right: 5px solid #044b47cb;
+  transition: border 350ms;
+}
+
+.transaction .btn-primary {
+  background-color: #56819cef;
+  border: lightseagreen;
+}
+.transaction .btn-outline-primary {
+  border: 1px solid lightseagreen;
+  color: lightseagreen;
+}
+.transaction .btn-primary:hover,
+.transaction .btn-outline-primary:hover {
+  background-color: #ee8168c9;
+  border: #ee8168c9;
+}
+.view-all_card:hover {
+  color: #0a63b1;
+  transform: scale(-1.5);
+}
+.search-input,
+.search-input:active,
+.search-input {
+  border: 0;
+  outline: 0;
+  margin-left: 0.5rem;
+}
+.search-and-profile-container {
+  border-bottom: 1.4px solid #e2e2e2b7;
+}
+
+/* The sidebar */
+.sidebar {
+  height: 90vh;
+  width: 25%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #324d60ee;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* The content */
+.content {
+  padding: 16px;
+}
+
+/* Style the links inside the sidebar */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.sidebar a:hover {
+  background-color: #044b487a;
+  color: #efefefd6;
+  border-radius: 7px;
+}
+
+/* Style the active/current link */
+.sidebar a.active {
+  background-color: #044b487a;
+  color: #e8e8e8f5;
+  border-radius: 7px;
+}
