@@ -1,10 +1,12 @@
 .history-item-container {
   background-color: #ffffff;
+  overflow-x: scroll;
 }
 .transaction_item {
   color: #747474;
   font-weight: bold;
   font-size: 0.86rem;
+  white-space: nowrap;
 }
 .amount_item {
   color: #555555;
@@ -31,4 +33,5 @@
   color: #848181;
   font-weight: 600;
   font-size: 0.86rem;
+  white-space: nowrap;
 }

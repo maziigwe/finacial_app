@@ -16,15 +16,7 @@ export const DashboardContent = () => {
           <CardItem title="Payouts (last 30 days)" amount={20000} />
         </Row>
         <h5 className="mt-4 p-0">Recent activity</h5>
-        <Row className="m-0 p-0 container">
-          {/* <div className="d-flex justify-content-between ">
-            <div className="d-flex   flex-grow-1">Transaction</div>
-            <div className="d-flex justify-content-between flex-grow-2">
-              <div>Amount </div>
-              <div>Status </div>
-              <div>Date</div>
-            </div>
-          </div> */}
+        <Row className="m-0 p-0 container table-responsive">
           <table className="table table-striped">
             <thead>
               <tr>

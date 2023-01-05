@@ -10,12 +10,14 @@ export const TransactionHistoryItem = ({ status = "processing" }) => {
   return (
     <tr className="history-item-container">
       <td scope="row">
-        <CashCoin className={classes} size={size} color={color} />
-        <span className="transaction_item">Payment to Molly Sanders</span>
+        <span className="transaction_item">
+          <CashCoin className={classes} size={size} color={color} />
+          Payment by Sanders
+        </span>
       </td>
       <td scope="row">
-        <span className="amount_item"> $20,000</span>{" "}
-        <span className="amount_item_USD">USD</span>
+        <span className="amount_item"> $20,000</span>
+        <span className="amount_item_USD mx-1">USD</span>
       </td>
       <td scope="row">
         <span className={"badge status_item p-2 px-3 " + status}>{status}</span>
