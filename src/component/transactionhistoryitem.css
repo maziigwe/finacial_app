@@ -1,0 +1,34 @@
+.history-item-container {
+  background-color: #ffffff;
+}
+.transaction_item {
+  color: #747474;
+  font-weight: bold;
+  font-size: 0.86rem;
+}
+.amount_item {
+  color: #555555;
+  font-weight: bold;
+}
+.amount_item_USD {
+  color: #848181;
+  font-weight: bold;
+}
+
+.status_item.badge.success {
+  background-color: #52f7a56b;
+  color: #045e46eb;
+}
+.status_item.badge.processing {
+  background-color: #f7a7525c;
+  color: #5e2e04b9;
+}
+.status_item.badge.failed {
+  background-color: #f752525d;
+  color: #aa0a0ab6;
+}
+.date_item {
+  color: #848181;
+  font-weight: 600;
+  font-size: 0.86rem;
+}
