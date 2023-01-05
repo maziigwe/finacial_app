@@ -11,10 +11,12 @@
 .amount_item {
   color: #555555;
   font-weight: bold;
+  font-size: 0.85rem;
 }
 .amount_item_USD {
   color: #848181;
   font-weight: bold;
+  font-size: 0.86rem;
 }
 
 .status_item.badge.success {
