@@ -1,12 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Dashboard } from "./pages/Dashboard";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Redirect,
 } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Dashboard } from "./pages/Dashboard";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/about" element={<h1>About</h1>} />
-        <Route path="/dashboard" element={<h1>Dashboard</h1>} />
+        <Route path="/dashboard" element={<Home />} />
       </Routes>
     </>
   );

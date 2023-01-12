@@ -1,0 +1,26 @@
+.top-navbar {
+  background-color: #000000fe;
+  color: #ffffffd5;
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+  align-items: center;
+}
+.contact-list {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 0.6;
+}
+
+.lang-dropdown {
+  flex-grow: 0.1;
+}
+option {
+  color: black;
+}
+.form-select-lang {
+  background-color: inherit;
+  color: inherit;
+  outline: none;
+  border: none;
+}
