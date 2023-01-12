@@ -6,11 +6,11 @@ export const TopNavbar = () => {
   return (
     <div className="  top-navbar">
       <div className="contact-list">
-        <div className="px-4">info@diamond-continental.com</div>
+        <div className="px-2">info@diamond-continental.com</div>
         <div className="px-4">+1 801STAN</div>
-        <div className="px-4">1152 East 2100 Salt Lake</div>
+        <div className="px-2">1152 East 2100 Salt Lake</div>
       </div>
-      <div className="d-flex px-4 lang-dropdown">
+      <div className="d-flex px-2 lang-dropdown">
         <div
           style={{
             border: "1px solid blue",
