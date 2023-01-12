@@ -39,10 +39,14 @@ option {
   }
   .contact-list {
     display: flex;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 1024px) {
   .top-navbar {
     justify-content: flex-end;
+  }
+  .contact-list {
+    font-size: 1.05rem;
   }
 }

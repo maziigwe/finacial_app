@@ -6,9 +6,15 @@ export const TopNavbar = () => {
   return (
     <div className="  top-navbar">
       <div className="contact-list">
-        <div className="px-2">info@diamond-continental.com</div>
-        <div className="px-4">+1 801STAN</div>
-        <div className="px-2">1152 East 2100 Salt Lake</div>
+        <div className="px-2">
+          <i className="bi bi-envelope mx-1"></i> info@diamond-continental.com
+        </div>
+        <div className="px-4">
+          <i class="bi bi-telephone mx-1"></i>+1 801STAN
+        </div>
+        <div className="px-2">
+          <i class="bi bi-geo-alt-fill mx-1"></i>1152 East 2100 Salt Lake
+        </div>
       </div>
       <div className="d-flex px-2 lang-dropdown">
         <div
