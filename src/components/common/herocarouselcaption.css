@@ -1,0 +1,61 @@
+.carousel-caption div,
+.carousel-caption p {
+  text-align: left;
+  padding-left: 1rem;
+}
+.carousel-caption div {
+  font-weight: bold;
+  color: #ec0203;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.carousel-caption .btn {
+  background-color: #ec0203;
+  outline: #ec0203;
+  border: #ec0203;
+  color: white;
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.carousel-caption .contact:hover {
+  background-color: #b40707d3;
+}
+.carousel-caption .service {
+  background-color: #ffffffd8;
+  color: rgba(24, 24, 24, 0.84);
+}
+.carousel-caption .service:hover {
+  background-color: #ffffff;
+  color: black;
+}
+.carousel-caption {
+  height: 100%;
+  padding-top: 8rem !important;
+  position: absolute;
+  bottom: 0 !important;
+}
+.carousel-caption h1 {
+  font-weight: 900;
+  text-align: left;
+  border-left: 4px solid #ec0203;
+  padding-left: 1rem;
+  max-width: 18ch;
+  line-height: 1;
+}
+@media (min-width: 1024px) {
+  .carousel-caption h1 {
+    max-width: 18ch;
+    font-size: 4rem;
+  }
+  .carousel-caption div,
+  .carousel-caption p {
+    text-align: left;
+    max-width: 55ch;
+  }
+  .carousel-caption {
+    background-color: #2c2b2b90;
+  }
+}
