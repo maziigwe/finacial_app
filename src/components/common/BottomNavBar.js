@@ -7,7 +7,7 @@ export const BottomNavBar = () => {
     <>
       <nav className=" px-3 navbar-expand-lg navbar-light bg-light">
         <nav className="container navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <AppIcon />
           </a>
           <button
@@ -41,7 +41,7 @@ export const BottomNavBar = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/dashboard">
                     Online Banking
                   </a>
                 </li>
