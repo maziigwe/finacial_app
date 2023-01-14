@@ -33,7 +33,7 @@
 }
 .carousel-caption {
   height: 100%;
-  padding-top: 5rem !important;
+  padding-top: 3rem !important;
   position: absolute;
   bottom: 0 !important;
 }
@@ -46,6 +46,9 @@
   line-height: 1;
 }
 @media (min-width: 1024px) {
+  .carousel-caption {
+    padding-top: 8rem !important;
+  }
   .carousel-caption h1 {
     max-width: 18ch;
     font-size: 4rem;
