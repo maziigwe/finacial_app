@@ -1,0 +1,10 @@
+.carousel-image-1 {
+  background-image: url("./../assets/6.jpg");
+  background-size: cover;
+  height: 50vh;
+}
+.carousel-image-2 {
+  background-image: url("./../assets/7.jpg");
+  background-size: cover;
+  height: 50vh;
+}
