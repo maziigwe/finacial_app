@@ -18,6 +18,29 @@ export const AboutSection = () => {
             us lorem lopsium
           </div>
         </div>
+        <div className="intro-container mt-4 px-2">
+          <div className="intro-about ">
+            <img
+              className="image-1"
+              alt="happy staff"
+              src="https://diamond-continental.com/images/resource/about-2.jpg"
+            />
+            <img
+              className="image-2"
+              alt="happy staff 2"
+              src="https://diamond-continental.com/images/resource/about-3.jpg"
+            />
+          </div>
+          <div className="about-subtitle">
+            <div>
+              {" "}
+              s lorem lopsiuma lo about us lorem lopsiuma lo about us lorem
+              lopsium us lorem lopsiuma lo about us lorem lopsiuma lo about us
+              lorem lopsium us lorem lopsiuma lo about us lorem lopsiuma lo
+              about us lorem lopsium
+            </div>
+          </div>
+        </div>
       </div>
       {/* <div className="container my-4 py-4 px-0">
         <div className="d-block d-lg-flex ">
