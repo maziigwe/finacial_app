@@ -10,7 +10,6 @@
   padding-left: 1rem;
   max-width: 18ch;
   line-height: 1;
-  text-transform: capitalize;
 }
 .section-left-border {
   border-left: 4px solid #ec0203;

@@ -1,7 +1,13 @@
 import React from "react";
+import { GridLayout } from "../component/GridLayout";
+import { Nav } from "react-bootstrap";
+import { Headset } from "react-bootstrap-icons";
 import "./about-section.css";
 
 export const AboutSection = () => {
+  const color = "white";
+  const size = "70";
+  const classes = "me-2";
   return (
     <div className="about-section">
       <div className="container">
@@ -33,11 +39,26 @@ export const AboutSection = () => {
           </div>
           <div className="about-subtitle">
             <div>
-              {" "}
-              s lorem lopsiuma lo about us lorem lopsiuma lo about us lorem
-              lopsium us lorem lopsiuma lo about us lorem lopsiuma lo about us
-              lorem lopsium us lorem lopsiuma lo about us lorem lopsiuma lo
-              about us lorem lopsium
+              <GridLayout>
+                <div className="about-item">
+                  <div className="round-icon my-2">
+                    <Headset className={classes} size={size} color={color} />
+                  </div>
+                  <h5>24/7 full online support</h5>
+                </div>
+                <div className="about-item">
+                  <div className="round-icon my-2">
+                    <Headset className={classes} size={size} color={color} />
+                  </div>
+                  <h5>26 years of experience</h5>
+                </div>
+                <div className="about-item">
+                  <div className="round-icon my-2">
+                    <Headset className={classes} size={size} color={color} />
+                  </div>
+                  <h5>Creative finance idea</h5>
+                </div>
+              </GridLayout>
             </div>
           </div>
         </div>

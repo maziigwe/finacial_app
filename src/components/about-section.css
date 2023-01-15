@@ -7,6 +7,15 @@
 .about-section h1 {
   padding: 0;
 }
+.about-item {
+  max-width: 150px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-item h5 {
+  font-weight: 900;
+  font-size: large;
+}
 .about-subtitle {
   max-width: 100%;
   text-align: justify;
@@ -15,25 +24,40 @@
   margin: 0;
 }
 .image-1 {
-  width: 120%;
+  width: 100%;
+}
+.round-icon {
+  background-color: #ec0203;
+  border-radius: 50%;
+  width: 120px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
 }
 .intro-about {
   position: relative;
-  margin-right: 4rem;
 }
 .image-2 {
   display: none;
+}
+.about-section .container {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   .about-section .container {
     padding: 0;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 95%;
   }
 }
 @media (min-width: 1024px) {
   .about-section .container {
-    max-width: 70%;
+    max-width: 90%;
   }
   .intro-container {
     display: flex;
@@ -51,6 +75,12 @@
     top: 40px;
     z-index: -1;
     display: block;
-    width: 120%;
+    width: 110%;
+    filter: brightness(30%);
+  }
+}
+@media (min-width: 1200px) {
+  .about-section .container {
+    max-width: 70%;
   }
 }
