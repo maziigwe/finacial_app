@@ -21,13 +21,17 @@ export const HeroSection = () => {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active carousel-image-1">
-            <HeroCarouselCaption />
+            <HeroCarouselCaption key={1} />
           </div>
           <div className="carousel-item carousel-image-2">
-            <HeroCarouselCaption />
+            <HeroCarouselCaption
+              key={2}
+              heading="We build your finances"
+              description="Diamond Continental is the leading financial institution in Utah for over 20 years"
+            />
           </div>
           <div className="carousel-item carousel-image-1">
-            <HeroCarouselCaption />
+            <HeroCarouselCaption key={3} />
           </div>
         </div>
         <a
