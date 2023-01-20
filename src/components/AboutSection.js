@@ -3,6 +3,7 @@ import { GridLayout } from "../component/GridLayout";
 import { Nav } from "react-bootstrap";
 import { Headset, HourglassSplit, GraphUp } from "react-bootstrap-icons";
 import "./about-section.css";
+import { ProgressBar } from "./common/ProgressBar";
 
 export const AboutSection = () => {
   const color = "white";
@@ -16,16 +17,16 @@ export const AboutSection = () => {
             <div className="section-title">Intro</div>
             <h1 className="section-heading">About us</h1>
           </div>
-          <div className="about-subtitle">
-            a lo about us lorem lopsium a lo about us lorem lopsium a lo about
-            us lorem lopsiuma lo about us lorem lopsiuma lo about us lorem
-            lopsium us lorem lopsiuma lo about us lorem lopsiuma lo about us
-            lorem lopsium us lorem lopsiuma lo about us lorem lopsiuma lo about
-            us lorem lopsium
+          <div className="about-subtitle about-text">
+            While we're a global bank, our mission is simple: We responsibly
+            provide financial services that enable growth and economic progress.
+            Standard Credit Union is the largest foreign direct investor in
+            financial services in Utah, it has played a leading role in
+            establishing market intermediaries with depositories.
           </div>
         </div>
         <div className="intro-container mt-4 px-2">
-          <div className="intro-about ">
+          <div className="intro-about image-before">
             <img
               className="image-1"
               alt="happy staff"
@@ -64,26 +65,32 @@ export const AboutSection = () => {
                 </div>
               </GridLayout>
             </div>
+            <div className="progress-container">
+              {/* <ProgressBar /> */}
+              <div className="skills">
+                <h2>Finance</h2>
+                <div className="progress-bars">
+                  <div className="html">
+                    <span>86</span>
+                  </div>
+                </div>
+                <h2>Business</h2>
+                <div className="progress-bars">
+                  <div className="css">
+                    <span>76</span>
+                  </div>
+                </div>
+                <h2>Investment</h2>
+                <div className="progress-bars">
+                  <div className="js">
+                    <span>91</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      {/* <div className="container my-4 py-4 px-0">
-        <div className="d-block d-lg-flex ">
-          <div className="col-lg-5 px-0">
-            <img
-              className="image-1"
-              alt="happy staff"
-              src="https://diamond-continental.com/images/resource/about-2.jpg"
-            />
-          </div>
-          <div className="col-lg-7 px-0">
-            s lorem lopsiuma lo about us lorem lopsiuma lo about us lorem
-            lopsium us lorem lopsiuma lo about us lorem lopsiuma lo about us
-            lorem lopsium us lorem lopsiuma lo about us lorem lopsiuma lo about
-            us lorem lopsium
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

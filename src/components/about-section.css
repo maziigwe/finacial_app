@@ -12,6 +12,20 @@
   text-align: center;
   margin: 0 auto;
 }
+.about-text {
+  max-width: 25ch;
+}
+.image-before::before {
+  position: absolute;
+  content: "";
+  left: -160px;
+  top: 40px;
+  width: 387px;
+  height: 255px;
+  z-index: -1;
+  display: inline-block;
+  background: url("https://diamond-continental.com/images/background/pattern-4.png");
+}
 .about-item h5 {
   font-weight: 900;
   font-size: large;
@@ -65,12 +79,16 @@
   }
 }
 @media (min-width: 1024px) {
+  .about-text {
+    max-width: 70%;
+    margin: 0 auto;
+  }
   .about-section .container {
     max-width: 90%;
   }
   .intro-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .intro-about {
   }
@@ -84,12 +102,80 @@
     top: 40px;
     z-index: -1;
     display: block;
-    width: 110%;
+    width: 100%;
     filter: brightness(30%);
   }
 }
 @media (min-width: 1200px) {
   .about-section .container {
     max-width: 70%;
+  }
+}
+
+.progress-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 1rem;
+}
+.skills h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.skills {
+  width: 100%;
+}
+.progress-bars {
+  background: #959595;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+}
+.progress-bars div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background-color: #262525;
+}
+.progress-bars div span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(20, 56, 87);
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+.html {
+  animation: html 1000ms linear forwards;
+}
+.css {
+  animation: css 1000ms linear forwards;
+}
+.js {
+  animation: js 1000ms linear forwards;
+}
+
+@keyframes html {
+  100% {
+    width: 86%;
+  }
+}
+@keyframes css {
+  100% {
+    width: 76%;
+  }
+}
+@keyframes js {
+  100% {
+    width: 91%;
   }
 }
