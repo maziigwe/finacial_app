@@ -26,7 +26,7 @@ export const GridLayout = ({ children }) => {
         </div> */}
         <div className="row">
           {React.Children.map(children, (child, i) => (
-            <div className="col-sm-12 col-md-6 col-lg-4">{child}</div>
+            <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3">{child}</div>
           ))}
         </div>
         {/* <div className="col-sm-12 col-md-6 col-lg-4"></div> */}

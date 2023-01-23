@@ -1,0 +1,18 @@
+.service-icon {
+  color: #ec0203;
+  font-size: 3rem;
+}
+.service-item > .cards {
+  margin: 1rem;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid rgb(221, 221, 221);
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.service-item > .cards:hover {
+  background-color: #ec020252;
+  color: white;
+  border: 1px solid gray;
+}

@@ -65,29 +65,7 @@ export const AboutSection = () => {
                 </div>
               </GridLayout>
             </div>
-            <div className="progress-container">
-              {/* <ProgressBar /> */}
-              <div className="skills">
-                <h2>Finance</h2>
-                <div className="progress-bars">
-                  <div className="html">
-                    <span>86</span>
-                  </div>
-                </div>
-                <h2>Business</h2>
-                <div className="progress-bars">
-                  <div className="css">
-                    <span>76</span>
-                  </div>
-                </div>
-                <h2>Investment</h2>
-                <div className="progress-bars">
-                  <div className="js">
-                    <span>91</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProgressBar />
           </div>
         </div>
       </div>
