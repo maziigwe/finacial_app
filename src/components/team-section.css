@@ -11,3 +11,6 @@
   margin: 0 auto;
   max-width: 25ch;
 }
+.team-section .row {
+  justify-content: center;
+}

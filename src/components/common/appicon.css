@@ -1,15 +1,12 @@
 @media (min-width: 1024px) {
   .main-appIcon {
-    position: fixed;
-    top: 1rem;
-    left: 5rem;
+    position: absolute;
+    top: -50%;
   }
 }
 
 @media (min-width: 1200px) {
   .main-appIcon {
-    position: fixed;
-    top: 1rem;
-    left: 10rem;
+    left: -2rem;
   }
 }
