@@ -10,9 +10,9 @@ export const StatisticSection = () => {
       <div className=" statistics-section">
         <GridLayout>
           <StatisticsItem />
-          <StatisticsItem />
-          <StatisticsItem />
-          <StatisticsItem />
+          <StatisticsItem title="Team Members" total="1954" />
+          <StatisticsItem title="Happy Client" total="850k+" />
+          <StatisticsItem title="Years Experience" total="26+" />
         </GridLayout>
       </div>
     </div>

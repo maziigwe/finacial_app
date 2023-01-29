@@ -21,11 +21,11 @@
 }
 .statistics-section::before {
   content: "";
-  background-color: #2d2d32fe;
+  background-color: #202021fe;
   position: absolute;
   bottom: 0;
   top: 0;
   right: 0;
   left: 0;
-  opacity: 0.85;
+  opacity: 0.9;
 }

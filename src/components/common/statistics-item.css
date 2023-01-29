@@ -13,13 +13,18 @@
 .statistics-item .total {
   font-weight: 900;
 }
+.statistics-item .icon {
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: #c40e0e;
+}
 @media screen and (min-width: 1024px) {
   .statistics-item {
     width: 150px;
     text-align: center;
     color: white;
     margin-right: 3rem;
-    margin-top: 1rem;
+
     position: relative;
     justify-self: center;
   }

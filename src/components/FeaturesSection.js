@@ -33,21 +33,21 @@ export const FeaturesSection = () => {
                   title="Best Leadership Ideas"
                   subtitle="Our Management Staff Is Poised And Focused On The Best Banking Ideas In The Industry."
                 /> */}
-                <div className="card my-2">
+                <div className="card my-2 py-3">
                   <h4> Expert Team</h4>
                   <p>
                     We Have A Thorougly Professional Expert Team In All Of Our
                     Departments.
                   </p>
                 </div>
-                <div className="card my-2 active">
+                <div className="card my-2 py-3 active">
                   <h4> Best Finance</h4>
                   <p>
                     Brand Our Brand Is The Most Innovative And Productive
                     Banking Brand In Utah.
                   </p>
                 </div>
-                <div className="card my-2">
+                <div className="card my-2 py-3">
                   <h4>Best Leadership Ideas</h4>
                   <p>
                     Our Management Staff Is Poised And Focused On The Best
