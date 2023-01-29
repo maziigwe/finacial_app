@@ -29,7 +29,7 @@ export const FeaturesSection = () => {
                     Departments.
                   </p>
                 </div>
-                <div className="card my-2">
+                <div className="card my-2 active">
                   <h4> Best Finance</h4>
                   <p>
                     Brand Our Brand Is The Most Innovative And Productive

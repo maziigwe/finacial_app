@@ -2,16 +2,21 @@
   padding: 4rem 0;
 }
 .feature-section .feature-text {
-  max-width: 90%;
   text-align: left;
   position: relative;
   justify-self: self-end;
 }
-/* .feature-section .card {
+.feature-section .card {
   border: 1px solid #9191917f;
-  height: ;
-} */
+  padding: 1.2rem 1rem;
+}
 @media screen and (min-width: 1024px) {
+  .feature-section .feature-text {
+    max-width: 90%;
+    text-align: left;
+    position: relative;
+    justify-self: self-end;
+  }
   .feature-section .card {
     border: 1px solid #9191917f;
     height: 33.33%;
@@ -27,7 +32,15 @@
 .feature-section .card h4 {
   font-weight: bold;
 }
-.feature-section:hover .card:hover {
+.feature-section:hover .card:hover,
+.card:active {
+  cursor: pointer;
+  border: 1px solid #ec0203;
+  background-color: #ec0203;
+  color: #fff;
+}
+.feature-section .card.active {
+  cursor: pointer;
   border: 1px solid #ec0203;
   background-color: #ec0203;
   color: #fff;
