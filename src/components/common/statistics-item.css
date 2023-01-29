@@ -1,0 +1,17 @@
+.statistics-item {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+  position: relative;
+  justify-self: center;
+}
+@media screen and (min-width: 1024px) {
+  .statistics-item {
+    width: 150px;
+    text-align: center;
+    color: white;
+
+    position: relative;
+    justify-self: center;
+  }
+}

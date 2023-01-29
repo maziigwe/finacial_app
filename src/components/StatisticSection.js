@@ -1,17 +1,19 @@
 import React from "react";
+import { GridLayout } from "../component/GridLayout";
+import { StatisticsItem } from "./common/StatisticsItem";
+
 import "./statistics-section.css";
 
 export const StatisticSection = () => {
   return (
-    <div style={{ height: "30vh", position: "relative" }}>
+    <div style={{ position: "relative" }}>
       <div className=" statistics-section">
-        {" "}
-        <ul className=" list list--inline">
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-        </ul>
-        <div className="overlay"> </div>
+        <GridLayout>
+          <StatisticsItem />
+          <StatisticsItem />
+          <StatisticsItem />
+          <StatisticsItem />
+        </GridLayout>
       </div>
     </div>
   );

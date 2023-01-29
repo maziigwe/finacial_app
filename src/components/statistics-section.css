@@ -1,12 +1,23 @@
 .statistics-section {
   background-image: url("../assets/8.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 250px;
-  padding: 10rem 0;
+
   width: 100%;
   position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .statistics-section {
+    background-image: url("../assets/8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    padding: 2rem 0;
+    width: 100%;
+    position: relative;
+  }
 }
 .statistics-section::before {
   content: "";
