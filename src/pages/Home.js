@@ -4,6 +4,7 @@ import { FeaturesSection } from "../components/FeaturesSection";
 import { HeroSection } from "../components/HeroSection";
 import { HomeNavBar } from "../components/HomeNavBar";
 import { ServiceSection } from "../components/ServiceSection";
+import { StatisticSection } from "../components/StatisticSection";
 import "./home.css";
 
 export const Home = () => {
@@ -15,6 +16,7 @@ export const Home = () => {
       <AboutSection />
       <ServiceSection />
       <FeaturesSection />
+      <StatisticSection />
     </div>
   );
 };

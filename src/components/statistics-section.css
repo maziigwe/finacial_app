@@ -1,0 +1,20 @@
+.statistics-section {
+  background-image: url("../assets/8.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  padding: 10rem 0;
+  width: 100%;
+  position: relative;
+}
+.statistics-section::before {
+  content: "";
+  background-color: #2d2d32fe;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.85;
+}

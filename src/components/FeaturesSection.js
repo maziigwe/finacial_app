@@ -1,13 +1,14 @@
 import React from "react";
 import "./feature-section.css";
 import feature_1 from "./../assets/feature-1.jpg";
+import { FeatureItem } from "./common/featureItem";
 
 export const FeaturesSection = () => {
   return (
     <div>
       <div className="about-section feature-section">
         <div className="container">
-          <div className="grid-1x2 grid-1x2--col-2-60">
+          <div className="grid-1x2 grid-1x2--col-2-60 mb-4 pb-4">
             <div className="px-2 section-left-border">
               <div className="section-title ">OUR BEST FEATURES </div>
               <h1 className="section-heading">Why choose us</h1>
@@ -22,6 +23,16 @@ export const FeaturesSection = () => {
           <div>
             <div className="grid-1x2 grid-1x2--col-2-60  mt-4 ">
               <div className="col">
+                {/* <FeatureItem />
+                <FeatureItem
+                  title="Best Finance"
+                  subtitle="Brand Our Brand Is The Most Innovative And Productive Banking Brand In Utah."
+                  active={true}
+                />
+                <FeatureItem
+                  title="Best Leadership Ideas"
+                  subtitle="Our Management Staff Is Poised And Focused On The Best Banking Ideas In The Industry."
+                /> */}
                 <div className="card my-2">
                   <h4> Expert Team</h4>
                   <p>
