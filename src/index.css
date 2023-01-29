@@ -7,3 +7,19 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Mulish", sans-serif;
 }
+
+/* .grid-1x2 {
+} */
+
+@media screen and (min-width: 1024px) {
+  .grid-1x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-1x2--col-1-60 {
+    grid-template-columns: 0.6fr 0.4fr;
+  }
+  .grid-1x2--col-2-60 {
+    grid-template-columns: 0.4fr 0.6fr;
+  }
+}

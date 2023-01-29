@@ -1,0 +1,34 @@
+.feature-section {
+  padding: 4rem 0;
+}
+.feature-section .feature-text {
+  max-width: 90%;
+  text-align: left;
+  position: relative;
+  justify-self: self-end;
+}
+/* .feature-section .card {
+  border: 1px solid #9191917f;
+  height: ;
+} */
+@media screen and (min-width: 1024px) {
+  .feature-section .card {
+    border: 1px solid #9191917f;
+    height: 33.33%;
+    padding: 0 1rem;
+  }
+}
+.feature-section .col {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feature-section .card h4 {
+  font-weight: bold;
+}
+.feature-section:hover .card:hover {
+  border: 1px solid #ec0203;
+  background-color: #ec0203;
+  color: #fff;
+}

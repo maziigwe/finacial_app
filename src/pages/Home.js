@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AboutSection } from "../components/AboutSection";
+import { FeaturesSection } from "../components/FeaturesSection";
 import { HeroSection } from "../components/HeroSection";
 import { HomeNavBar } from "../components/HomeNavBar";
 import { ServiceSection } from "../components/ServiceSection";
@@ -13,6 +14,7 @@ export const Home = () => {
       <HeroSection />
       <AboutSection />
       <ServiceSection />
+      <FeaturesSection />
     </div>
   );
 };
