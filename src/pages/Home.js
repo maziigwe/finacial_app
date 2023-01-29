@@ -5,6 +5,7 @@ import { HeroSection } from "../components/HeroSection";
 import { HomeNavBar } from "../components/HomeNavBar";
 import { ServiceSection } from "../components/ServiceSection";
 import { StatisticSection } from "../components/StatisticSection";
+import { TeamSection } from "../components/TeamSection";
 import "./home.css";
 
 export const Home = () => {
@@ -17,6 +18,7 @@ export const Home = () => {
       <ServiceSection />
       <FeaturesSection />
       <StatisticSection />
+      <TeamSection />
     </div>
   );
 };

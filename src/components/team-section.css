@@ -1,0 +1,13 @@
+.team-section {
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.team-section .intro-about {
+  text-align: center;
+}
+.team-section .section-heading {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 25ch;
+}
