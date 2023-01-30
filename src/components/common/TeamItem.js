@@ -11,8 +11,12 @@ export const TeamItem = ({
       <div>
         {" "}
         <img loading="lazy" src={image} alt="team member" />
-        <h4>{name}</h4>
-        <p>{position}</p>
+        <div className="team__subtitle">
+          {" "}
+          <h4>{name}</h4>
+          <p>{position}</p>
+          <div className="team-overlay"></div>
+        </div>
       </div>
     </div>
   );
