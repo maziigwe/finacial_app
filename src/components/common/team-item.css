@@ -6,11 +6,9 @@
   margin: 2rem 0;
   position: relative;
   width: 100%;
-}
-.team-overlay {
   transition: all 350ms;
-  color: #000;
 }
+
 .team__subtitle {
   position: relative;
 }
