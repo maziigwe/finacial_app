@@ -17,16 +17,40 @@ export const TeamSection = () => {
           <div>
             <GridLayout>
               <TeamItem />
-              <TeamItem />
-              <TeamItem />
+              <TeamItem
+                image="https://diamond-continental.com/images/resource/team-5.jpg"
+                name="Chen Lee"
+                position="Co-Founder"
+              />
+              <TeamItem
+                name="Emma O’Brien"
+                position="Sr. Product Engineer"
+                image="https://diamond-continental.com/images/resource/team-6.jpg"
+              />
             </GridLayout>
           </div>
           <div>
             <GridLayout>
-              <TeamItem />
-              <TeamItem />
-              <TeamItem />
-              <TeamItem />
+              <TeamItem
+                name="David Ankrum"
+                position="Co Founder"
+                image="https://diamond-continental.com/images/resource/team-7.jpg"
+              />
+              <TeamItem
+                name="Maria De Aragon"
+                position="HRM"
+                image="https://diamond-continental.com/images/resource/team-8.jpg"
+              />
+              <TeamItem
+                name="Joe Hurt"
+                position="CTO"
+                image="https://diamond-continental.com/images/resource/team-9.jpg"
+              />
+              <TeamItem
+                name="Damien Wayne"
+                position="COO"
+                image="https://diamond-continental.com/images/resource/team-10.jpg"
+              />
             </GridLayout>
           </div>
         </div>
