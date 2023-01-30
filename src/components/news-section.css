@@ -1,0 +1,11 @@
+.news-section {
+  display: block;
+  text-align: left;
+}
+.news-section .card:hover {
+  border-right: 0;
+}
+.news-section .card:active {
+  background-color: inherit;
+  color: #000;
+}

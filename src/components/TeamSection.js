@@ -1,5 +1,6 @@
 import React from "react";
 import { GridLayout } from "../component/GridLayout";
+import { GridLayout1x3 } from "../component/GridLayout1x3";
 import { TeamItem } from "./common/TeamItem";
 import "./team-section.css";
 
@@ -13,9 +14,9 @@ export const TeamSection = () => {
             We have a large number of expert team member
           </h1>
         </div>
-        <div className="my-4 py-4">
+        <div className="my-1 py-4">
           <div>
-            <GridLayout>
+            <GridLayout1x3>
               <TeamItem />
               <TeamItem
                 image="https://diamond-continental.com/images/resource/team-5.jpg"
@@ -27,7 +28,7 @@ export const TeamSection = () => {
                 position="Sr. Product Engineer"
                 image="https://diamond-continental.com/images/resource/team-6.jpg"
               />
-            </GridLayout>
+            </GridLayout1x3>
           </div>
           <div>
             <GridLayout>

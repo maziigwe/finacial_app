@@ -8,9 +8,9 @@ export const NewsSection = () => {
   return (
     <div className="container news-section">
       <div>
-        <div className="px-2 section-left-border">
+        <div className="mb-4 px-2 section-left-border">
           <div className="section-title ">SOME OF OUR NEWS </div>
-          <h1 className="section-heading">Learn about us</h1>
+          <h1 className=" px-0 section-heading">Learn about us</h1>
         </div>
         <GridLayout1x3>
           <NewsItem />
