@@ -9,11 +9,14 @@ export const NewsItem = () => {
           src="https://diamond-continental.com/images/resource/news-4.jpg"
           alt="office"
         />
-        <div>
+        <div className="p-4">
           <div>
             <span>Date</span> <span>Admin</span>
           </div>
-          News Item
+          <div>
+            <h5>Strategy for Norway's Pension Fund Global.</h5>
+          </div>
+          <button>View More</button>
         </div>
       </div>
     </div>
