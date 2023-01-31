@@ -27,6 +27,40 @@ export const NewsSection = () => {
           </GridLayout1x3>
         </div>
       </div>
+      <div className=" my-4">
+        <div className="list list--inline list--inline--center companies">
+          <img
+            className="img_1"
+            src="https://diamond-continental.com/images/clients/3.png"
+            alt="patners"
+          />
+          <img
+            className="img_2"
+            src="https://diamond-continental.com/images/clients/4.png"
+            alt="patners"
+          />
+          <img
+            className="img_3"
+            src="https://diamond-continental.com/images/clients/5.png"
+            alt="patners"
+          />
+          <img
+            className="img_4"
+            src="https://diamond-continental.com/images/clients/6.png"
+            alt="patners"
+          />
+          <img
+            className="img_5"
+            src="https://diamond-continental.com/images/clients/1.png"
+            alt="patners"
+          />
+          <img
+            className="img_6"
+            src="https://diamond-continental.com/images/clients/2.png"
+            alt="patners"
+          />
+        </div>
+      </div>
     </div>
   );
 };
