@@ -2,6 +2,48 @@
   background-color: rgba(0, 0, 0, 0.841);
   color: #fff;
   padding: 0.257rem 1.67rem;
+  border: 0;
+  outline: 0;
+  transition: background-color 250ms;
+  margin: 0.5rem 0;
+}
+.news-image-container {
+  position: relative;
+}
+.news-item:hover .news-overlay {
+  width: 100%;
+  background-color: #ec0203;
+}
+.news-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  opacity: 0.7;
+  transition: all 500ms;
+  display: grid;
+  place-items: center;
+}
+.center-item {
+  transition: all 1500ms;
+  opacity: 0;
+  color: #ec0203;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.news-item:hover .center-item {
+  display: inline;
+  opacity: 1;
+  color: #fff;
+}
+.news-image {
+  width: 100%;
+}
+.news-btn:hover {
+  background-color: #ec0203;
 }
 .news-title {
   font-weight: bold;

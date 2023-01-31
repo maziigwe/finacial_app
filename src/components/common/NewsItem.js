@@ -9,7 +9,14 @@ export const NewsItem = ({
   return (
     <div className="news-item">
       <div className="card">
-        <img src={image} alt="office" />
+        <div className="news-image-container">
+          <img className="news-image" src={image} alt="office" />
+          <div className="news-overlay">
+            <span className="center-item">
+              <i class="bi bi-plus-circle"></i>
+            </span>
+          </div>
+        </div>
         <div className="p-4">
           <div className="news-subtitle">
             <i class="bi bi-calendar3"></i>

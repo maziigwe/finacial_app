@@ -1,6 +1,5 @@
 import React from "react";
 import "./news-section.css";
-import { GridLayout } from "../component/GridLayout";
 import { NewsItem } from "./common/NewsItem";
 import { GridLayout1x3 } from "./../component/GridLayout1x3";
 
