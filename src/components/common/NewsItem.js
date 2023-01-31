@@ -1,22 +1,26 @@
 import React from "react";
 import "./news-item.css";
 
-export const NewsItem = () => {
+export const NewsItem = ({
+  image = "https://diamond-continental.com/images/resource/news-4.jpg",
+  title = "Strategy for Norway's Pension Fund Global.",
+  date = "January 03, 2023",
+}) => {
   return (
     <div className="news-item">
       <div className="card">
-        <img
-          src="https://diamond-continental.com/images/resource/news-4.jpg"
-          alt="office"
-        />
+        <img src={image} alt="office" />
         <div className="p-4">
-          <div>
-            <span>Date</span> <span>Admin</span>
+          <div className="news-subtitle">
+            <i class="bi bi-calendar3"></i>
+            <span className="mx-1 news-date">{date}</span>{" "}
+            <i class="bi bi-person-fill mx-1"></i>
+            <span className="new-admin">Admin</span>
           </div>
           <div>
-            <h5>Strategy for Norway's Pension Fund Global.</h5>
+            <h5 className="news-title">{title}</h5>
           </div>
-          <button>View More</button>
+          <button className="news-btn">View More</button>
         </div>
       </div>
     </div>

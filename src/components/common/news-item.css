@@ -1,0 +1,12 @@
+.news-btn {
+  background-color: rgba(0, 0, 0, 0.841);
+  color: #fff;
+  padding: 0.257rem 1.67rem;
+}
+.news-title {
+  font-weight: bold;
+}
+.news-subtitle {
+  font-size: small;
+  color: #252323cf;
+}

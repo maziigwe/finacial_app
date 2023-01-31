@@ -14,7 +14,7 @@ export const FeaturesSection = () => {
               <h1 className="section-heading">Why choose us</h1>
             </div>
             <div className="feature-text">
-              We are the most preferred, trustworthy, leading bank in Utah
+              We are the most preferred, trustworthy, leading bank in the world
               because we provide rapid, efficient and top quality banking
               solutions to meet the needs of customers and consistently enhance
               shareholder's value.
