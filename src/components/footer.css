@@ -1,0 +1,9 @@
+.footer-section {
+  background-color: #080603;
+  color: #ffffffbb;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+.footer-section li i {
+  color: #ec0203;
+}
