@@ -7,3 +7,32 @@
 .footer-section li i {
   color: #ec0203;
 }
+.footer-section a {
+  color: #ffffffbb;
+}
+.footer-section:hover a {
+  transform: translateX(-2px);
+  color: #ffffffbb;
+}
+.footer-section li {
+  transition: all 250ms;
+}
+.footer-section li:hover {
+  transform: translateX(3.5px);
+}
+.other-items li i {
+  color: #fff;
+}
+.other-items li {
+  margin-bottom: 10px;
+  white-space: nowrap;
+  position: relative;
+  justify-self: right;
+  width: 100px;
+}
+.other-items {
+  width: 25%;
+}
+.other-items h4 {
+  font-weight: bold;
+}
