@@ -9,6 +9,10 @@
   background-color: inherit;
   color: #000;
 }
+.companies {
+  display: flex;
+  justify-content: center;
+}
 
 .img_2,
 .img_3,
