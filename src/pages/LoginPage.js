@@ -4,6 +4,7 @@ import { Layout } from "../component/Layout";
 import { Input } from "../components/common/Input";
 import logo from "./../assets/signing-logo.png";
 import "./loginpage.css";
+import { HomeNavBar } from "./../components/HomeNavBar";
 
 export const LoginPage = () => {
   const props = {
@@ -12,6 +13,7 @@ export const LoginPage = () => {
   };
   return (
     <Layout {...props}>
+      {/* <HomeNavBar /> */}
       <div className="login-page">
         <div className="login-card">
           <div>
