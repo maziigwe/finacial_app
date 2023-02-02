@@ -5,3 +5,11 @@
   text-align: center;
   padding: 3rem 0;
 }
+.loan-link {
+  color: black;
+  text-decoration: none;
+}
+.loan-link:hover {
+  color: black;
+  text-decoration: none;
+}
