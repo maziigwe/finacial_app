@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Layout } from "../component/Layout";
 import { Input } from "../components/common/Input";
@@ -10,6 +10,11 @@ export const LoginPage = () => {
   const props = {
     title: "Diamond Continental Inc. - Login",
     description: "Welcome to the login page",
+  };
+  const [loginData, setLoginData] = useState({ account_id: "", password: "" });
+  const handleOnchange = (e) => {
+    e.preventDefault();
+    console.log(e.target.value + " => " + e.target.id);
   };
   return (
     <Layout {...props}>
@@ -26,6 +31,7 @@ export const LoginPage = () => {
           <div>
             <Input />
             <Input
+              onChange={handleOnchange}
               label="Password"
               name="Password"
               placeholder="Password"

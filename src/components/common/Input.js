@@ -6,6 +6,7 @@ export const Input = ({
   label = "Account ID",
   type = "number",
   placeholder = "Account ID",
+  onChange,
 }) => {
   return (
     <div className="input-item">
@@ -17,7 +18,13 @@ export const Input = ({
           ""
         )}
       </div>
-      <input id={name} min="0" type={type} placeholder={placeholder} />
+      <input
+        onChange={onChange}
+        id={name}
+        min="0"
+        type={type}
+        placeholder={placeholder}
+      />
     </div>
   );
 };
