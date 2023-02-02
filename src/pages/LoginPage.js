@@ -14,7 +14,25 @@ export const LoginPage = () => {
   const [loginData, setLoginData] = useState({ account_id: "", password: "" });
   const handleOnchange = (e) => {
     e.preventDefault();
-    console.log(e.target.value + " => " + e.target.id);
+    const value = e.target.value;
+    let data;
+    switch (e.target.id) {
+      case "account_id":
+        data = { ...loginData };
+        data.account_id = value;
+        setLoginData(data);
+        break;
+      case "Password":
+        data = { ...loginData };
+        data.password = value;
+        setLoginData(data);
+        break;
+      default:
+        break;
+    }
+  };
+  const handleSubmit = () => {
+    console.log(loginData);
   };
   return (
     <Layout {...props}>
@@ -29,7 +47,7 @@ export const LoginPage = () => {
             <img src={logo} alt="App Icon" />
           </div>
           <div>
-            <Input />
+            <Input type="text" onChange={handleOnchange} />
             <Input
               onChange={handleOnchange}
               label="Password"
@@ -37,7 +55,11 @@ export const LoginPage = () => {
               placeholder="Password"
               type="password"
             />
-            <Link className="btn btn-primary login-btn" to="/">
+            <Link
+              onClick={handleSubmit}
+              className="btn btn-primary login-btn"
+              to=""
+            >
               Log In
             </Link>
           </div>
