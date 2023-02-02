@@ -34,6 +34,10 @@
 
   background-color: gold;
 }
+.login-btn {
+  width: 90%;
+  margin: 0 auto;
+}
 
 @media screen and (min-width: 1024px) {
   .login-card {

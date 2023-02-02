@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Layout } from "../component/Layout";
 import { Input } from "../components/common/Input";
 import logo from "./../assets/signing-logo.png";
@@ -28,6 +29,9 @@ export const LoginPage = () => {
               placeholder="Password"
               type="password"
             />
+            <Link className="btn btn-primary login-btn" to="/">
+              Log In
+            </Link>
           </div>
         </div>
       </div>
