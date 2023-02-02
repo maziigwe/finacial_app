@@ -1,0 +1,18 @@
+.input-item {
+  padding: 1rem;
+}
+.input-item .list span {
+  font-size: 0.75rem;
+  padding: 0 1rem;
+}
+.input-item .forgot-password {
+  color: #686b6d;
+}
+.input-item input {
+  width: 100%;
+  outline: 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid #bfc9d4;
+  border-radius: 6px;
+  font-size: 1rem;
+}
