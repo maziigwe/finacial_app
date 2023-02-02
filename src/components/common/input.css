@@ -1,5 +1,6 @@
 .input-item {
   padding: 1rem;
+  position: relative;
 }
 .input-item .list span {
   font-size: 0.75rem;
@@ -19,4 +20,12 @@
   border: 1px solid #bfc9d4;
   border-radius: 6px;
   font-size: 1rem;
+  padding-left: 1.95rem;
+}
+.left-icons {
+  position: absolute;
+  top: 50%;
+  color: #0e466b;
+  font-size: 1.1rem;
+  margin: 0 0.5rem 0;
 }
