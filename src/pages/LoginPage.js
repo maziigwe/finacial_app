@@ -11,19 +11,23 @@ export const LoginPage = () => {
   };
   return (
     <Layout {...props}>
-      {" "}
       <div className="login-page">
         <div className="login-card">
           <div>
-            <h1>Sign In</h1>{" "}
+            <h1>Sign In</h1>
           </div>
           <p>Log in to your account to continue.</p>
           <div className="signing-logo">
             <img src={logo} alt="App Icon" />
           </div>
           <div>
-            {" "}
             <Input />
+            <Input
+              label="Password"
+              name="Password"
+              placeholder="Password"
+              type="password"
+            />
           </div>
         </div>
       </div>

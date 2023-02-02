@@ -8,6 +8,10 @@
 .input-item .forgot-password {
   color: #686b6d;
 }
+.input-texts {
+  display: flex;
+  justify-content: space-between;
+}
 .input-item input {
   width: 100%;
   outline: 0;

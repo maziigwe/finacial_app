@@ -3,16 +3,21 @@ import "./input.css";
 
 export const Input = ({
   name = "account_id",
+  label = "Account ID",
   type = "number",
   placeholder = "Account ID",
 }) => {
   return (
     <div className="input-item">
-      <div className="list list--inline">
-        <span>Account ID</span>{" "}
-        <span className="forgot-password">forgot password</span>
+      <div className="list list--inline input-texts">
+        <span>{label}</span>{" "}
+        {type === "password" ? (
+          <span className="forgot-password">don't have an account?</span>
+        ) : (
+          ""
+        )}
       </div>
-      <input id={name} type={type} placeholder={placeholder} />
+      <input id={name} min="0" type={type} placeholder={placeholder} />
     </div>
   );
 };
