@@ -1,0 +1,10 @@
+.input-text-area {
+  width: 100%;
+  font-size: 0.9rem;
+  outline: 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid #bfc9d4;
+  border-radius: 6px;
+  height: 90px;
+  color: #3c3d3e;
+}
