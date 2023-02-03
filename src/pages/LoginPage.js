@@ -9,7 +9,7 @@ import { HomeNavBar } from "./../components/HomeNavBar";
 export const LoginPage = () => {
   const props = {
     title: "Diamond Continental Inc. - Login",
-    description: "Welcome to the login page",
+    description: "Log into your account.",
   };
   const [loginData, setLoginData] = useState({ account_id: "", password: "" });
   const handleOnchange = (e) => {

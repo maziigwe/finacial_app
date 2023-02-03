@@ -5,12 +5,11 @@ import { Input } from "../components/common/Input";
 import logo from "./../assets/signing-logo.png";
 import "./signin-page.css";
 import { HomeNavBar } from "../components/HomeNavBar";
-import { InputTextArea } from "../components/common/InputTextArea";
 
-export const SignupPage = () => {
+export const LoanRequestPage = () => {
   const props = {
-    title: "Diamond Continental Inc. - Account Opening",
-    description: "Welcome to Diamond Continental",
+    title: "Diamond Continental Inc. - Loan & Mortgages",
+    description: "Loan request form.",
   };
   const [loginData, setLoginData] = useState({ account_id: "", password: "" });
   const handleOnchange = (e) => {
@@ -41,9 +40,9 @@ export const SignupPage = () => {
       <div className="signin-page">
         <div className="login-card">
           <div>
-            <h1>Create Account</h1>
+            <h1>Loan Application Form </h1>
           </div>
-          <p>Fill out this account opening request form.</p>
+          <p>Fill and submit the loan & mortgages request form.</p>
           <div className="signing-logo">
             <img src={logo} alt="App Icon" />
           </div>
@@ -69,16 +68,33 @@ export const SignupPage = () => {
               placeholder="+1-234-567-90"
               onChange={handleOnchange}
             />
-            <InputTextArea
-              label="Message"
-              placeholder="Add additional message (optional)"
+            <Input
+              name="address"
+              type="text"
+              label="Current Address"
+              placeholder="Enter current address"
+              onChange={handleOnchange}
             />
+            <Input
+              name="ssn"
+              type="text"
+              label="SSN"
+              placeholder="Enter your social security number"
+              onChange={handleOnchange}
+            />
+            <Input
+              name="passport"
+              type="file"
+              label="Valid ID"
+              onChange={handleOnchange}
+            />
+
             <Link
               onClick={handleSubmit}
               className="btn btn-primary login-btn"
               to=""
             >
-              Submit Request
+              Submit Application
             </Link>
           </div>
         </div>

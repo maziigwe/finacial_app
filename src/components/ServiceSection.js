@@ -32,7 +32,7 @@ export const ServiceSection = () => {
             title="Investment Management "
             subtitle="At Standard Credit Union, we understand your investment goals, and how to make your money work for you."
           />
-          <a className="loan-link" href="/login">
+          <a className="loan-link" href="/loan">
             <ServiceItem
               iconClass="bi bi-house-gear-fill"
               title="Loans & Mortgages "
