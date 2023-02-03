@@ -11,11 +11,21 @@ export const Input = ({
   function iconClass() {
     let icons = "";
     if (name === "account_id") {
-      icons = "bi bi-person";
+      icons = "bi bi-person mt-1";
     } else if (name === "Password") {
-      icons = "bi bi-key";
+      icons = "bi bi-key mt-1";
+    } else if (name === "email") {
+      icons = "bi bi-envelope-check mt-1";
+    } else if (name === "phone") {
+      icons = "bi bi-telephone mt-1";
+    } else if (name === "address") {
+      icons = "bi bi-geo-alt mt-1";
+    } else if (name === "ssn") {
+      icons = "bi bi-question-circle mt-1";
+    } else if (name === "passport") {
+      icons = "bi bi-upload mt-1";
     } else {
-      icons = "bi bi-person";
+      icons = "bi bi-person mt-1";
     }
     return icons;
   }
