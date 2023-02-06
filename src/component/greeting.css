@@ -1,0 +1,10 @@
+.verify-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-positioning {
+  display: flex;
+
+  align-items: center;
+}

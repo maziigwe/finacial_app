@@ -1,0 +1,9 @@
+.customers-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.customers-container .history-item-container {
+  overflow-x: scroll;
+}

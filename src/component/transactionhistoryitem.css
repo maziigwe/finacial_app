@@ -7,6 +7,8 @@
   font-weight: bold;
   font-size: 0.86rem;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 .amount_item {
   color: #555555;
@@ -36,4 +38,9 @@
   font-weight: 600;
   font-size: 0.86rem;
   white-space: nowrap;
+}
+.history-image {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 120%;
 }

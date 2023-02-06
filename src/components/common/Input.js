@@ -6,6 +6,7 @@ export const Input = ({
   label = "Account ID",
   type = "number",
   placeholder = "Account ID",
+  value,
   onChange,
 }) => {
   function iconClass() {
@@ -46,6 +47,7 @@ export const Input = ({
         <i className={iconClass() + " left-icons"}></i>
       </span>
       <input
+        value={value}
         onChange={onChange}
         id={name}
         min="0"

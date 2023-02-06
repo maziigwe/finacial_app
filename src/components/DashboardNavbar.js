@@ -10,7 +10,7 @@ export const DashboardNavbar = ({
 }) => {
   return (
     <Col className="mt-0" xs={12} sm={12} md={12}>
-      <Card className="bg-white px-2">
+      <Card className="bg-white px-2 dash-nav">
         <Card.Body>
           <div>
             <div className="  py-2 search-and-profile-container">
@@ -24,12 +24,15 @@ export const DashboardNavbar = ({
                 {" "}
                 <div className="d-flex justify-content-between">
                   <Link
-                    className="btn btn-outline-primary outline me-3"
+                    className="btn btn-outline-primary outline mx-1 disabled"
                     to="/add-fund"
                   >
                     Add money
                   </Link>
-                  <Link className="btn btn-primary" to="/add-fund">
+                  <Link
+                    className="btn btn-primary mx-1 disabled"
+                    to="/add-fund"
+                  >
                     Send money
                   </Link>
                 </div>

@@ -21,7 +21,7 @@ export const InputTextArea = ({
         )}
       </div>
       <textarea
-        name={name}
+        id={name}
         onChange={onChange}
         placeholder={placeholder}
         className="input-text-area"

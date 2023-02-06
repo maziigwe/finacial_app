@@ -13,44 +13,88 @@ import {
 } from "react-bootstrap-icons";
 
 function Sidebar() {
+  const { isAdmin } = JSON.parse(localStorage.getItem("user"));
+  console.log(isAdmin);
   const color = "lightblue";
   const size = "30";
-  const classes = "me-2";
+  const classes = "mx-2";
   return (
     <Nav defaultActiveKey="/home" className="flex-column ">
-      <Nav.Link href="/home">
-        <Bank2 className={classes} size={size} color={color} />
-        Home
+      <Nav.Link href="/">
+        <div className=" icon-positioning">
+          <Bank2 className={classes} size={size} color={color} />
+          Home
+        </div>
       </Nav.Link>
-      <Nav.Link href="/history">
-        <ClockFill className={classes} size={size} color={color} />
-        History
+      <Nav.Link href="/">
+        <div className=" icon-positioning">
+          <ClockFill className={classes} size={size} color={color} />
+          History
+        </div>
       </Nav.Link>
-      <Nav.Link href="/balances">
-        <CashStack className={classes} size={size} color={color} />
-        Balances
+      <Nav.Link href="/">
+        <div className=" icon-positioning">
+          <CashStack className={classes} size={size} color={color} />
+          Balances
+        </div>
       </Nav.Link>
-      <Nav.Link href="/card">
-        <CreditCard className={classes} size={size} color={color} />
-        Cards
+      <Nav.Link href="/">
+        <div className=" icon-positioning">
+          <CreditCard className={classes} size={size} color={color} />
+          Cards
+        </div>
       </Nav.Link>
-      <Nav.Link href="/recipient">
-        <People className={classes} size={size} color={color} /> Recipient
+      <Nav.Link href="/">
+        <div className=" icon-positioning">
+          <People className={classes} size={size} color={color} /> Recipient
+        </div>
       </Nav.Link>
-      <Nav.Link href="/reports">
-        <FileEarmarkBarGraph className={classes} size={size} color={color} />{" "}
-        Reports
+      <Nav.Link href="/">
+        <div className=" icon-positioning">
+          <FileEarmarkBarGraph className={classes} size={size} color={color} />{" "}
+          Reports
+        </div>
       </Nav.Link>
-      <Nav.Link href="/settings">
-        <GearWideConnected className={classes} size={size} color={color} />
-        Settings
+      <Nav.Link href="/">
+        <div className=" icon-positioning">
+          <GearWideConnected className={classes} size={size} color={color} />
+          Settings
+        </div>
       </Nav.Link>
-      <Nav.Link href="/help">
-        <QuestionCircle className={classes} size={size} color={color} /> Help
+      <Nav.Link href="/">
+        <div className=" icon-positioning">
+          <QuestionCircle className={classes} size={size} color={color} /> Help
+        </div>
       </Nav.Link>
-      <Nav.Link href="/help">
-        <ShieldCheck className={classes} size={size} color={color} /> Privacy
+      <Nav.Link href="/">
+        <div className=" icon-positioning">
+          <ShieldCheck className={classes} size={size} color={color} /> Privacy
+        </div>
       </Nav.Link>
+      {isAdmin && (
+        <Nav.Link href="/create-account">
+          <div className=" icon-positioning">
+            <ShieldCheck className={classes} size={size} color="red" /> Open
+            Account
+          </div>
+        </Nav.Link>
+      )}
+      {isAdmin && (
+        <Nav.Link href="/customers">
+          <div className=" icon-positioning">
+            <ShieldCheck className={classes} size={size} color="red" />
+            All Customers
+          </div>
+        </Nav.Link>
+      )}
+      {isAdmin && (
+        <Nav.Link href="/admin-transactions">
+          <div className=" icon-positioning">
+            <ShieldCheck className={classes} size={size} color="red" />
+            All Transactions
+          </div>
+        </Nav.Link>
+      )}
     </Nav>
   );
 }

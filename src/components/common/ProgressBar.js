@@ -9,13 +9,13 @@ export const ProgressBar = () => {
         <h2>Finance</h2>
         <div className="progress-bars">
           <div className="html">
-            <span>86</span>
+            <span>93</span>
           </div>
         </div>
         <h2>Business</h2>
         <div className="progress-bars">
           <div className="css">
-            <span>76</span>
+            <span>90</span>
           </div>
         </div>
         <h2>Investment</h2>

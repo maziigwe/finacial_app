@@ -126,3 +126,8 @@
   color: #e8e8e8f5;
   border-radius: 7px;
 }
+
+.dashboard .card:active {
+  color: black;
+  border: none;
+}

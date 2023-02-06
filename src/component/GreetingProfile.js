@@ -1,31 +1,31 @@
 import React from "react";
+import "./greeting.css";
 import { BuildingFill, PatchCheckFill } from "react-bootstrap-icons";
 
 export const GreetingProfile = () => {
+  const { photo, address, full_name } = JSON.parse(
+    localStorage.getItem("user")
+  );
   const color = "gray";
   const size = "18";
   const classes = "me-2";
   return (
     <div className="d-flex justify-content-between ">
-      <img
-        className="ms-1 round-profile-2"
-        src="https://www.therconline.com/wp-content/uploads/2022/05/Does-Facebook-have-the-%E2%80%98New-Profile-Pic-feature-as-app-goes-viral-1-768x768.png"
-        alt="profile picture"
-      />
-      <div className="d-flex flex-column mt-2 ms-1">
-        <h3>Welcome, John Doe</h3>
+      <img className="ms-1 round-profile-2" src={photo} alt="profile picture" />
+      <div className="d-flex flex-column mt-2 mx-2">
+        <h3>Welcome, {full_name}</h3>
         <div className="d-flex justify-content-between">
           <span className="mx-2 verify-address">
-            <BuildingFill className={classes} size={size} color={color} /> Duke
-            Street Studio
+            <BuildingFill className={classes} size={size} color={color} />
+            {address.slice(0, 20)}
           </span>
           <span className="verify-address">
             <PatchCheckFill
-              className="mx-1"
+              className="mt-1"
               size={size}
               color={true ? "#04a954f8" : "gray"}
             />
-            Verified
+            <span>Verified</span>
           </span>
         </div>
       </div>
