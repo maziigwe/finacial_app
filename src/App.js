@@ -16,7 +16,8 @@ import { FundAccountPage } from "./pages/FundAccountPage";
 import { AllTransactions } from "./pages/AllTransactions";
 
 function App(props) {
-  const { isAdmin } = JSON.parse(localStorage.getItem("user"));
+  const user = localStorage.getItem("user");
+  const isAdmin = user ? JSON.parse(user).isAdmin : false;
   return (
     <>
       <ToastContainer />
@@ -30,7 +31,7 @@ function App(props) {
         <Route
           path="/create-account"
           element={
-            isAdmin ? (
+            isAdmin === true ? (
               <AdminCreateAccount {...props} />
             ) : (
               <Navigate to="/login" replace />
@@ -40,7 +41,7 @@ function App(props) {
         <Route
           path="/customers"
           element={
-            isAdmin ? (
+            isAdmin === true ? (
               <AllCustomers {...props} />
             ) : (
               <Navigate to="/login" replace />
@@ -50,7 +51,7 @@ function App(props) {
         <Route
           path="/add-fund/:email"
           element={
-            isAdmin ? (
+            isAdmin === true ? (
               <FundAccountPage {...props} />
             ) : (
               <Navigate to="/login" replace />
@@ -60,7 +61,7 @@ function App(props) {
         <Route
           path="/admin-transactions"
           element={
-            isAdmin ? (
+            isAdmin === true ? (
               <AllTransactions {...props} />
             ) : (
               <Navigate to="/login" replace />
