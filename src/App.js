@@ -18,6 +18,9 @@ import { AllTransactions } from "./pages/AllTransactions";
 function App(props) {
   const user = localStorage.getItem("user");
   const isAdmin = user ? JSON.parse(user).isAdmin : false;
+  //token
+  const email = user ? JSON.parse(user).email : "";
+  console.log(email);
   return (
     <>
       <ToastContainer />
@@ -68,8 +71,14 @@ function App(props) {
             )
           }
         />
-
-        <Route path="/dashboard" element={<Dashboard {...props} />} />
+        {/* const user = localStorage.getItem("user"); const isAdmin = user ?
+        JSON.parse(user).isAdmin : false; */}
+        <Route
+          path="/dashboard"
+          element={
+            email ? <Dashboard {...props} /> : <Navigate to="/login" replace />
+          }
+        />
       </Routes>
     </>
   );

@@ -20,6 +20,7 @@ export const AllCustomers = () => {
   };
   const [data, setData] = useState([{}]);
   const [error, setError] = useState(null);
+
   const token = JSON.parse(localStorage.getItem("token"));
 
   useEffect(() => {
