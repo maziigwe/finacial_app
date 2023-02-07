@@ -24,10 +24,10 @@ export const DashboardNavbar = ({
                 {" "}
                 <div className="d-flex justify-content-between">
                   <Link
-                    className="btn btn-outline-primary outline mx-1 disabled"
-                    to="/add-fund"
+                    className="btn btn-outline-primary outline mx-1"
+                    to="/loan"
                   >
-                    Add money
+                    Loan money
                   </Link>
                   <Link
                     className="btn btn-primary mx-1 disabled"

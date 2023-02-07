@@ -7,7 +7,7 @@ export const NewsItem = ({
   date = "January 03, 2023",
 }) => {
   return (
-    <div className="news-item">
+    <div className="news-item mb-4">
       <div className="card">
         <div className="news-image-container">
           <img className="news-image" src={image} alt="office" />
