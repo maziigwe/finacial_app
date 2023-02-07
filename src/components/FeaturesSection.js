@@ -44,7 +44,7 @@ export const FeaturesSection = () => {
                   <h4> Best Finance</h4>
                   <p>
                     Brand Our Brand Is The Most Innovative And Productive
-                    Banking Brand In Utah.
+                    Banking Brand in the world.
                   </p>
                 </div>
                 <div className="card my-2 py-3">
