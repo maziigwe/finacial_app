@@ -208,7 +208,6 @@ export const AdminCreateAccount = () => {
               onChange={handleOnchange}
             />
             <Input
-              value={loginData.photo}
               name="photo"
               type="file"
               label="Photo"

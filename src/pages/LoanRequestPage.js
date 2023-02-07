@@ -11,13 +11,19 @@ export const LoanRequestPage = () => {
     title: "Diamond Continental Inc. - Loan & Mortgages",
     description: "Loan request form.",
   };
-  const [loginData, setLoginData] = useState({ account_id: "", password: "" });
+  const [loginData, setLoginData] = useState({
+    full_name: "",
+    email: "",
+    phone: "",
+    message: "",
+    requestType: "loan",
+  });
   const handleOnchange = (e) => {
     e.preventDefault();
     const value = e.target.value;
     let data;
     switch (e.target.id) {
-      case "account_id":
+      case "full_name":
         data = { ...loginData };
         data.account_id = value;
         setLoginData(data);
