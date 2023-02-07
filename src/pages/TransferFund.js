@@ -61,7 +61,7 @@ export const MoneyTransfer = () => {
         break;
       case "sender_password":
         data = { ...loginData };
-        data.sender_account_id = value;
+        data.sender_password = value;
         setLoginData(data);
         break;
       case "sender_account_type":

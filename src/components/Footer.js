@@ -24,11 +24,16 @@ export const Footer = () => {
             </li>
             <li>
               <i class="bi bi-envelope-fill mx-1"></i>
-              info@diamond-continental.com
+              <a
+                className="email-address-link"
+                href="mailto:support@landolt-central.com"
+              >
+                support@landolt-central.com
+              </a>
             </li>
             <li>
               <i class="bi bi-house-door-fill mx-1"></i>
-              <span>1152 East 2100 South. Salt Lake City UT 84106</span>
+              <span> 49 Charing Cross London SW1A2DX</span>
             </li>
           </div>
           <div className="list other-items">
@@ -71,17 +76,21 @@ export const Footer = () => {
             </li>
           </div>
           <div className="list other-items">
-            <h4>Support</h4>
+            <h4>
+              <a href="mailto:support@landolt-central.com">Support </a>
+            </h4>
             <li>
               <i class="bi bi-chevron-right "></i>
-              <a className="mx-1" href="/">
+
+              <a className="mx-1" href="mailto:support@landolt-central.com">
                 Contact Us
               </a>
             </li>
             <li>
               <i class="bi bi-chevron-right"></i>
-              <a className="mx-1" href="/"></a>
-              Submit a Ticket
+              <a className="mx-1" href="mailto:support@landolt-central.com">
+                Submit a Ticket
+              </a>
             </li>
             <li>
               <i class="bi bi-chevron-right"></i>

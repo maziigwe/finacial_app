@@ -21,7 +21,7 @@ export const AboutSection = () => {
             While we're a global bank, our mission is simple: We responsibly
             provide financial services that enable growth and economic progress.
             Standard Credit Union is the largest foreign direct investor in
-            financial services in Utah, it has played a leading role in
+            financial services in the world, it has played a leading role in
             establishing market intermediaries with depositories.
           </div>
         </div>

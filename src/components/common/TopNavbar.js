@@ -12,13 +12,19 @@ export const TopNavbar = () => {
           <div className="contact-list">
             <div className="px-2">
               <i className="bi bi-envelope mx-1"></i>{" "}
-              info@diamond-continental.com
+              <a
+                className="email-address-link"
+                href="mailto:support@landolt-central.com"
+              >
+                support@landolt-central.com
+              </a>
             </div>
             <div className="px-4">
               <i class="bi bi-telephone mx-1"></i>+1 801STAN
             </div>
             <div className="px-2">
-              <i class="bi bi-geo-alt-fill mx-1"></i>1152 East 2100 Salt Lake
+              <i class="bi bi-geo-alt-fill mx-1"></i>49 Charing Cross London
+              SW1A2DX
             </div>
           </div>
           <div className="d-flex px-2 lang-dropdown">

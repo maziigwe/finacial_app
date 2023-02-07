@@ -27,7 +27,7 @@ export const HeroSection = () => {
             <HeroCarouselCaption
               key={2}
               heading="We build your finances"
-              description="Diamond Continental is the leading financial institution in Utah for over 20 years"
+              description="Landolt Central is one of the leading financial institution in the world."
             />
           </div>
           <div className="carousel-item carousel-image-1">
