@@ -68,7 +68,7 @@ export const DashboardContent = () => {
               </tr>
             </thead>
             <tbody className="pb-4">
-              <TransactionHistory transactions={myTransactions} />
+              <TransactionHistory transactions={myTransactions.reverse()} />
             </tbody>
           </table>
         </Row>

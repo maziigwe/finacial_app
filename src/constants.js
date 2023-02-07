@@ -10,6 +10,7 @@ const base_live = "https://mern-api.herokuapp.com";
 // export const admin_all_transactions = base + "/api/admin/getAllTransactions/";
 // export const approve_transaction = base + "/api/admin/approve/transaction/";
 // export const delete_transaction = base + "/api/admin/delete/transaction/";
+// export const user_transfer_fund = base + "/api/user/transfer/";
 
 //LIVE
 export const create_account_url = base_live + "/api/user/register/";
@@ -24,3 +25,4 @@ export const admin_all_transactions =
 export const approve_transaction =
   base_live + "/api/admin/approve/transaction/";
 export const delete_transaction = base_live + "/api/admin/delete/transaction/";
+export const user_transfer_fund = base_live + "/api/user/transfer/";

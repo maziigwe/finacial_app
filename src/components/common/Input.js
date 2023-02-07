@@ -13,7 +13,7 @@ export const Input = ({
     let icons = "";
     if (name === "account_id") {
       icons = "bi bi-person mt-1";
-    } else if (name === "Password") {
+    } else if (name === "Password" || name === "sender_pin") {
       icons = "bi bi-key mt-1";
     } else if (name === "email") {
       icons = "bi bi-envelope-check mt-1";
@@ -35,7 +35,7 @@ export const Input = ({
     <div className="input-item">
       <div className="list list--inline input-texts">
         <span>{label}</span>{" "}
-        {type === "password" ? (
+        {type === "password" && name !== "sender_pin" ? (
           <span className="forgot-password">
             <a href="/sign-in">don't have an account?</a>
           </span>

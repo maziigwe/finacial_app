@@ -26,11 +26,29 @@ function App(props) {
       <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<h1>About</h1>} />
+        {/* <Route path="/about" element={<h1>About</h1>} /> */}
         <Route path="/login" element={<LoginPage {...props} />} />
         <Route path="/sign-in" element={<SignupPage {...props} />} />
-        <Route path="/loan" element={<LoanRequestPage {...props} />} />
-        <Route path="/money-transfer" element={<MoneyTransfer {...props} />} />
+        <Route
+          path="/loan"
+          element={
+            email ? (
+              <LoanRequestPage {...props} />
+            ) : (
+              <Navigate to="/login" replace />
+            )
+          }
+        />
+        <Route
+          path="/money-transfer"
+          element={
+            email ? (
+              <MoneyTransfer {...props} />
+            ) : (
+              <Navigate to="/login" replace />
+            )
+          }
+        />
         <Route
           path="/create-account"
           element={

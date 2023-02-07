@@ -51,40 +51,40 @@ export const FundAccountPage = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(loginData);
-    // try {
-    //   const login_request = await axios.post(admin_fund_user, loginData, {
-    //     "Content-Type": "application/json",
-    //     headers: {
-    //       Authorization: `Bearer ${token}`,
-    //     },
-    //   });
-    //   const { data } = login_request;
-    //   if (data) {
-    //     toast("Fund added!", {
-    //       type: "success",
-    //       autoClose: 5000,
-    //     });
-    //     setLoginData({
-    //       email: email,
-    //       amount: 0,
-    //       transactionType: "credit",
-    //       accountType: "main",
-    //     });
-    //     navigate("/admin-transactions");
-    //   }
-    // } catch (error) {
-    //   toast(error.response.data.message, {
-    //     type: "error",
-    //     autoClose: 5000,
-    //   });
-    //   setLoginData({
-    //     email: email,
-    //     amount: 0,
-    //     transactionType: "credit",
-    //     accountType: "main",
-    //   });
-    // }
+    // console.log(loginData);
+    try {
+      const login_request = await axios.post(admin_fund_user, loginData, {
+        "Content-Type": "application/json",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      const { data } = login_request;
+      if (data) {
+        toast("Fund added!", {
+          type: "success",
+          autoClose: 5000,
+        });
+        setLoginData({
+          email: email,
+          amount: 0,
+          transactionType: "credit",
+          accountType: "main",
+        });
+        navigate("/admin-transactions");
+      }
+    } catch (error) {
+      toast(error.response.data.message, {
+        type: "error",
+        autoClose: 5000,
+      });
+      setLoginData({
+        email: email,
+        amount: 0,
+        transactionType: "credit",
+        accountType: "main",
+      });
+    }
   };
   return (
     <Layout {...props}>

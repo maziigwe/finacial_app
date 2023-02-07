@@ -7,12 +7,18 @@ import { InputTextArea } from "../components/common/InputTextArea";
 import "./admin-create-account.css";
 import "./fund-transfer.css";
 import { InputSelect } from "../components/common/InputSelect";
+import { user_transfer_fund } from "./../constants";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export const MoneyTransfer = () => {
   const props = {
     title: "Diamond Continental Inc. - Money Transfer",
     description: "transfer fund easily",
   };
+  const navigate = useNavigate();
+  const token = JSON.parse(localStorage.getItem("token"));
   const [loginData, setLoginData] = useState({
     receiver_bank_name: "",
     receiver_account_no: "",
@@ -20,9 +26,10 @@ export const MoneyTransfer = () => {
     receiver_email: "",
     receiver_account_type: "savings",
     sender_account_id: "",
-    sender_password: "",
+    sender_pin: "",
     sender_account_type: "savings",
     sender_email: "",
+    amount: "",
   });
   const handleOnchange = (e) => {
     e.preventDefault();
@@ -59,9 +66,9 @@ export const MoneyTransfer = () => {
         data.sender_account_id = value;
         setLoginData(data);
         break;
-      case "sender_password":
+      case "sender_pin":
         data = { ...loginData };
-        data.sender_password = value;
+        data.sender_pin = value;
         setLoginData(data);
         break;
       case "sender_account_type":
@@ -74,12 +81,62 @@ export const MoneyTransfer = () => {
         data.sender_email = value;
         setLoginData(data);
         break;
+      case "amount":
+        data = { ...loginData };
+        data.amount = value;
+        setLoginData(data);
+        break;
       default:
         break;
     }
   };
-  const handleSubmit = () => {
-    console.log(loginData);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const login_request = await axios.post(user_transfer_fund, loginData, {
+        "Content-Type": "application/json",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      const { data } = login_request;
+      if (data) {
+        toast("Transfer request sent!", {
+          type: "info",
+          autoClose: 5000,
+        });
+        setLoginData({
+          receiver_bank_name: "",
+          receiver_account_no: "",
+          receiver_routing_no: "",
+          receiver_email: "",
+          receiver_account_type: "savings",
+          sender_account_id: "",
+          sender_pin: "",
+          sender_account_type: "savings",
+          sender_email: "",
+          amount: "",
+        });
+        navigate("/dashboard");
+      }
+    } catch (error) {
+      toast(error.response.data.message, {
+        type: "error",
+        autoClose: 5000,
+      });
+      setLoginData({
+        receiver_bank_name: "",
+        receiver_account_no: "",
+        receiver_routing_no: "",
+        receiver_email: "",
+        receiver_account_type: "savings",
+        sender_account_id: "",
+        sender_pin: "",
+        sender_account_type: "savings",
+        sender_email: "",
+        amount: "",
+      });
+    }
   };
   return (
     <Layout {...props}>
@@ -95,6 +152,7 @@ export const MoneyTransfer = () => {
           <h3 className="form-subtitle">Receiver's Information</h3>
           <div>
             <Input
+              value={loginData.receiver_bank_name}
               name="receiver_bank_name"
               type="text"
               label="Bank Name"
@@ -102,6 +160,7 @@ export const MoneyTransfer = () => {
               onChange={handleOnchange}
             />
             <Input
+              value={loginData.receiver_account_no}
               name="receiver_account_no"
               type="text"
               label="Account Number"
@@ -109,6 +168,7 @@ export const MoneyTransfer = () => {
               onChange={handleOnchange}
             />
             <Input
+              value={loginData.receiver_routing_no}
               name="receiver_routing_no"
               type="text"
               label="Routing Number"
@@ -116,6 +176,7 @@ export const MoneyTransfer = () => {
               onChange={handleOnchange}
             />
             <Input
+              value={loginData.receiver_email}
               name="receiver_email"
               type="email"
               label="Email Address"
@@ -135,6 +196,7 @@ export const MoneyTransfer = () => {
 
             <h3 className="form-subtitle">Sender's Information</h3>
             <Input
+              value={loginData.sender_account_id}
               name="sender_account_id"
               type="text"
               label="Account ID"
@@ -142,10 +204,11 @@ export const MoneyTransfer = () => {
               onChange={handleOnchange}
             />
             <Input
-              name="sender_password"
-              type="text"
-              label="Password"
-              placeholder="Enter password"
+              value={loginData.sender_pin}
+              name="sender_pin"
+              type="password"
+              label="Pin"
+              placeholder="Enter your pin"
               onChange={handleOnchange}
             />
 
@@ -159,10 +222,19 @@ export const MoneyTransfer = () => {
               ]}
             />
             <Input
+              value={loginData.sender_email}
               name="sender_email"
               type="email"
               label="Email Address"
               placeholder="Enter your email address"
+              onChange={handleOnchange}
+            />
+            <Input
+              value={loginData.amount}
+              name="amount"
+              type="number"
+              label="Amount"
+              placeholder="Enter amount"
               onChange={handleOnchange}
             />
 

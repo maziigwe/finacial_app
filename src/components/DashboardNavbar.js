@@ -29,10 +29,7 @@ export const DashboardNavbar = ({
                   >
                     Loan money
                   </Link>
-                  <Link
-                    className="btn btn-primary mx-1 disabled"
-                    to="/add-fund"
-                  >
+                  <Link className="btn btn-primary mx-1" to="/money-transfer">
                     Send money
                   </Link>
                 </div>
