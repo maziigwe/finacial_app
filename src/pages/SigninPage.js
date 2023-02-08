@@ -12,8 +12,8 @@ import { toast } from "react-toastify";
 
 export const SignupPage = () => {
   const props = {
-    title: "Diamond Continental Inc. - Account Opening",
-    description: "Welcome to Diamond Continental",
+    title: "Landolt Central Inc. - Account Opening",
+    description: "Welcome to Landolt Central",
   };
   const [loginData, setLoginData] = useState({
     full_name: "",

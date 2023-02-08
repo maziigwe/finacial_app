@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 
 export const LoanRequestPage = () => {
   const props = {
-    title: "Diamond Continental Inc. - Loan & Mortgages",
+    title: "Landolt Central Inc. - Loan & Mortgages",
     description: "Loan request form.",
   };
   const [loginData, setLoginData] = useState({

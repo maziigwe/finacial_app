@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 
 export const MoneyTransfer = () => {
   const props = {
-    title: "Diamond Continental Inc. - Money Transfer",
+    title: "Landolt Central Inc. - Money Transfer",
     description: "transfer fund easily",
   };
   const navigate = useNavigate();

@@ -12,7 +12,7 @@ import { create_account_url } from "./../constants";
 
 export const AdminCreateAccount = () => {
   const props = {
-    title: "Diamond Continental Inc. - Create Account",
+    title: "Landolt Central Inc. - Create Account",
     description: "Create a new account",
   };
   const [loginData, setLoginData] = useState({

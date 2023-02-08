@@ -11,7 +11,7 @@ import { login_url } from "../constants";
 
 export const LoginPage = () => {
   const props = {
-    title: "Diamond Continental Inc. - Login",
+    title: "Landolt Central Inc. - Login",
     description: "Log into your account.",
   };
   const navigate = useNavigate();
